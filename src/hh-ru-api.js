@@ -18,7 +18,7 @@ const showError = error => result_container.innerHTML = error
 
 const showResults = data => {
     result_container.innerHTML = ''
-    console.log(!data.items)
+
     if (!data.items.length) {
         result_container.innerHTML = "По данному запросу ничего не найдено :("
         return
