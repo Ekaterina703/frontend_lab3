@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script defer type="module" src="src/main.js"></script>
+    <script defer type="module" src="src/swiper_config.js"></script>
+  </head>
+  <body>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./img/1.jpg"></div>
+          <div class="swiper-slide"><img src="./img/2.jpg"></div>
+          <div class="swiper-slide"><img src="./img/3.jpg"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div id="app" class="container">
+      <div class="search-container">
+        <div class="input-group mb-3">
+          <input id="search-input" type="text" class="form-control" placeholder="Введите название вакансии" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="search-button" class="btn btn-outline-primary" type="button">Поиск</button>
+          </div>
+        </div>
+        <div id="result" class="result-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
